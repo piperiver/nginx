@@ -69,7 +69,7 @@ const getUbication = () => {
       }
 
       if (error.code === error.PERMISSION_DENIED) {
-        window.location.reload();
+        // window.location.reload(true);
       }
     },
     {
