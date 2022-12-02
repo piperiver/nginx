@@ -1,37 +1,745 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<!-- saved from url=(0061)https://jovenes.prosperidadsocial.gov.co/Registro/Preregistro -->
+<html lang="en" data-lt-installed="true">
   <head>
-    <meta charset="utf-8" />
-    <title>NGINX on Railway</title>
-    <meta name="description" content="Choo Choo!" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Jovenes en acción</title>
 
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Cargando iconos -->
+    <link href="./jovenes_files/bootstrap.css" rel="stylesheet" />
+    <link href="./jovenes_files/bootstrap.min.css" rel="stylesheet" />
+    <link href="./jovenes_files/estilos.css" rel="stylesheet" />
+    <style type="text/css">
+      .vue-slider-dot {
+        position: absolute;
+        -webkit-transition: all 0s;
+        transition: all 0s;
+        z-index: 5;
+      }
+      .vue-slider-dot:focus {
+        outline: none;
+      }
+      .vue-slider-dot-tooltip {
+        position: absolute;
+        visibility: hidden;
+      }
+      .vue-slider-dot-hover:hover .vue-slider-dot-tooltip,
+      .vue-slider-dot-tooltip-show {
+        visibility: visible;
+      }
+      .vue-slider-dot-tooltip-top {
+        top: -10px;
+        left: 50%;
+        -webkit-transform: translate(-50%, -100%);
+        transform: translate(-50%, -100%);
+      }
+      .vue-slider-dot-tooltip-bottom {
+        bottom: -10px;
+        left: 50%;
+        -webkit-transform: translate(-50%, 100%);
+        transform: translate(-50%, 100%);
+      }
+      .vue-slider-dot-tooltip-left {
+        left: -10px;
+        top: 50%;
+        -webkit-transform: translate(-100%, -50%);
+        transform: translate(-100%, -50%);
+      }
+      .vue-slider-dot-tooltip-right {
+        right: -10px;
+        top: 50%;
+        -webkit-transform: translate(100%, -50%);
+        transform: translate(100%, -50%);
+      }
+    </style>
+    <style type="text/css">
+      .vue-slider-marks {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      .vue-slider-mark {
+        position: absolute;
+        z-index: 1;
+      }
+      .vue-slider-ltr .vue-slider-mark,
+      .vue-slider-rtl .vue-slider-mark {
+        width: 0;
+        height: 100%;
+        top: 50%;
+      }
+      .vue-slider-ltr .vue-slider-mark-step,
+      .vue-slider-rtl .vue-slider-mark-step {
+        top: 0;
+      }
+      .vue-slider-ltr .vue-slider-mark-label,
+      .vue-slider-rtl .vue-slider-mark-label {
+        top: 100%;
+        margin-top: 10px;
+      }
+      .vue-slider-ltr .vue-slider-mark {
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+      .vue-slider-ltr .vue-slider-mark-step {
+        left: 0;
+      }
+      .vue-slider-ltr .vue-slider-mark-label {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+      }
+      .vue-slider-rtl .vue-slider-mark {
+        -webkit-transform: translate(50%, -50%);
+        transform: translate(50%, -50%);
+      }
+      .vue-slider-rtl .vue-slider-mark-step {
+        right: 0;
+      }
+      .vue-slider-rtl .vue-slider-mark-label {
+        right: 50%;
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
+      }
+      .vue-slider-btt .vue-slider-mark,
+      .vue-slider-ttb .vue-slider-mark {
+        width: 100%;
+        height: 0;
+        left: 50%;
+      }
+      .vue-slider-btt .vue-slider-mark-step,
+      .vue-slider-ttb .vue-slider-mark-step {
+        left: 0;
+      }
+      .vue-slider-btt .vue-slider-mark-label,
+      .vue-slider-ttb .vue-slider-mark-label {
+        left: 100%;
+        margin-left: 10px;
+      }
+      .vue-slider-btt .vue-slider-mark {
+        -webkit-transform: translate(-50%, 50%);
+        transform: translate(-50%, 50%);
+      }
+      .vue-slider-btt .vue-slider-mark-step {
+        top: 0;
+      }
+      .vue-slider-btt .vue-slider-mark-label {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+      .vue-slider-ttb .vue-slider-mark {
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+      .vue-slider-ttb .vue-slider-mark-step {
+        bottom: 0;
+      }
+      .vue-slider-ttb .vue-slider-mark-label {
+        bottom: 50%;
+        -webkit-transform: translateY(50%);
+        transform: translateY(50%);
+      }
+      .vue-slider-mark-label,
+      .vue-slider-mark-step {
+        position: absolute;
+      }
+    </style>
+    <style type="text/css">
+      .vue-slider {
+        position: relative;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        display: block;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+      .vue-slider-rail {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        -webkit-transition-property: width, height, left, right, top, bottom;
+        transition-property: width, height, left, right, top, bottom;
+      }
+      .vue-slider-process {
+        position: absolute;
+        z-index: 1;
+      }
+    </style>
+    <style type="text/css">
+      /* component style */
+      .vue-slider-disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
 
-    <link rel="stylesheet" href="/styles.css?v=1.0" />
+      /* rail style */
+      .vue-slider-rail {
+        background-color: #ccc;
+        border-radius: 15px;
+      }
+
+      /* process style */
+      .vue-slider-process {
+        background-color: #3498db;
+        border-radius: 15px;
+      }
+
+      /* mark style */
+      .vue-slider-mark {
+        z-index: 4;
+      }
+      .vue-slider-mark:first-child .vue-slider-mark-step,
+      .vue-slider-mark:last-child .vue-slider-mark-step {
+        display: none;
+      }
+      .vue-slider-mark-step {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.16);
+      }
+      .vue-slider-mark-label {
+        font-size: 14px;
+        white-space: nowrap;
+      }
+      /* dot style */
+      .vue-slider-dot-handle {
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #fff;
+        box-sizing: border-box;
+        box-shadow: 0.5px 0.5px 2px 1px rgba(0, 0, 0, 0.32);
+      }
+      .vue-slider-dot-handle-focus {
+        box-shadow: 0px 0px 1px 2px rgba(52, 152, 219, 0.36);
+      }
+
+      .vue-slider-dot-handle-disabled {
+        cursor: not-allowed;
+        background-color: #ccc;
+      }
+
+      .vue-slider-dot-tooltip-inner {
+        font-size: 14px;
+        white-space: nowrap;
+        padding: 2px 5px;
+        min-width: 20px;
+        text-align: center;
+        color: #fff;
+        border-radius: 5px;
+        border-color: #3498db;
+        background-color: #3498db;
+        box-sizing: content-box;
+      }
+      .vue-slider-dot-tooltip-inner::after {
+        content: "";
+        position: absolute;
+      }
+      .vue-slider-dot-tooltip-inner-top::after {
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        height: 0;
+        width: 0;
+        border-color: transparent;
+        border-style: solid;
+        border-width: 5px;
+        border-top-color: inherit;
+      }
+      .vue-slider-dot-tooltip-inner-bottom::after {
+        bottom: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        height: 0;
+        width: 0;
+        border-color: transparent;
+        border-style: solid;
+        border-width: 5px;
+        border-bottom-color: inherit;
+      }
+      .vue-slider-dot-tooltip-inner-left::after {
+        left: 100%;
+        top: 50%;
+        transform: translate(0, -50%);
+        height: 0;
+        width: 0;
+        border-color: transparent;
+        border-style: solid;
+        border-width: 5px;
+        border-left-color: inherit;
+      }
+      .vue-slider-dot-tooltip-inner-right::after {
+        right: 100%;
+        top: 50%;
+        transform: translate(0, -50%);
+        height: 0;
+        width: 0;
+        border-color: transparent;
+        border-style: solid;
+        border-width: 5px;
+        border-right-color: inherit;
+      }
+
+      .vue-slider-dot-tooltip-wrapper {
+        opacity: 0;
+        transition: all 0.3s;
+      }
+      .vue-slider-dot-tooltip-wrapper-show {
+        opacity: 1;
+      }
+    </style>
+    <style type="text/css">
+      .Main__controls_2NwB5pzJ[data-v-6d709352] {
+        width: 100%;
+        max-width: 510px;
+        position: fixed;
+        padding: 0px 11px;
+        user-select: none;
+        z-index: 10000000;
+        background: white;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      .Main__controls_2NwB5pzJ .Main__play-btn-wrap_3rgD9LhS[data-v-6d709352] {
+        margin: 0 0px;
+      }
+      .Main__controls_2NwB5pzJ
+        .Main__play-btn-wrap_3rgD9LhS
+        div[data-v-6d709352] {
+        cursor: pointer;
+        height: 32px;
+        width: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      .Main__controls_2NwB5pzJ
+        .Main__play-btn-wrap_3rgD9LhS
+        svg[data-v-6d709352] {
+        width: 14px;
+        height: auto;
+        cursor: pointer;
+      }
+      .Main__controls_2NwB5pzJ .Main__controls-wrap_1OZx2-EX[data-v-6d709352] {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        padding: 8px 0;
+        align-items: center;
+      }
+      .Main__controls_2NwB5pzJ
+        .Main__controls-wrap_1OZx2-EX
+        .Main__time_tn6KImFn[data-v-6d709352] {
+        white-space: nowrap;
+        margin-right: 10px;
+        margin-left: 2px;
+        font-size: 10px;
+        font-family: "Didact Gothic";
+      }
+      .Main__controls_2NwB5pzJ
+        .Main__controls-wrap_1OZx2-EX
+        .Main__progress_1zVw0Wuq[data-v-6d709352] {
+        margin: 0 5px;
+        max-width: 343px;
+        flex-shrink: unset;
+        width: 100%;
+      }
+      .Main__controls_2NwB5pzJ
+        .Main__controls-wrap_1OZx2-EX
+        .Main__duration_2sMNYYPs[data-v-6d709352] {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 10px;
+        font-family: "Didact Gothic";
+      }
+      .Main__controls_2NwB5pzJ
+        .Main__controls-wrap_1OZx2-EX
+        .Main__volume_1P22O1ac[data-v-6d709352] {
+        flex-shrink: unset;
+        margin: 0 5px;
+        width: 100px;
+      }
+      .Main__tl_1pnObGGm[data-v-6d709352] {
+        top: 15%;
+        right: calc(100% - 38px);
+        padding-right: 3px;
+      }
+      .Main__tl_1pnObGGm .Main__play-btn-wrap_3rgD9LhS div[data-v-6d709352] {
+        margin-left: 5px;
+      }
+      .Main__tl_1pnObGGm[data-v-6d709352]:hover {
+        right: unset;
+        left: -4px;
+        padding-right: 11px;
+        padding-left: 0px;
+      }
+      .Main__tl_1pnObGGm:hover .Main__play-btn-wrap_3rgD9LhS[data-v-6d709352] {
+        order: 0;
+      }
+      .Main__tl_1pnObGGm:hover
+        .Main__play-btn-wrap_3rgD9LhS
+        div[data-v-6d709352] {
+        padding-left: 5px;
+        margin-left: unset;
+      }
+      .Main__tl_1pnObGGm .Main__play-btn-wrap_3rgD9LhS[data-v-6d709352] {
+        order: 1;
+      }
+      .Main__bl_d5SrWcku[data-v-6d709352] {
+        bottom: 15%;
+        right: calc(100% - 38px);
+        padding-right: 3px;
+      }
+      .Main__bl_d5SrWcku .Main__play-btn-wrap_3rgD9LhS div[data-v-6d709352] {
+        margin-left: 5px;
+      }
+      .Main__bl_d5SrWcku[data-v-6d709352]:hover {
+        right: unset;
+        left: -4px;
+        padding-right: 11px;
+        padding-left: 0px;
+      }
+      .Main__bl_d5SrWcku:hover .Main__play-btn-wrap_3rgD9LhS[data-v-6d709352] {
+        order: 0;
+      }
+      .Main__bl_d5SrWcku:hover
+        .Main__play-btn-wrap_3rgD9LhS
+        div[data-v-6d709352] {
+        padding-left: 5px;
+        margin-left: unset;
+      }
+      .Main__bl_d5SrWcku .Main__play-btn-wrap_3rgD9LhS[data-v-6d709352] {
+        order: 1;
+      }
+      .Main__tr_2vESR4dh[data-v-6d709352] {
+        top: 15%;
+        left: calc(100% - 38px);
+        padding-left: 3px;
+      }
+      .Main__tr_2vESR4dh .Main__play-btn-wrap_3rgD9LhS div[data-v-6d709352] {
+        margin-right: 5px;
+      }
+      .Main__tr_2vESR4dh[data-v-6d709352]:hover {
+        left: unset;
+        right: -4px;
+        padding-right: 5px;
+        padding-left: 11px;
+      }
+      .Main__tr_2vESR4dh:hover .Main__play-btn-wrap_3rgD9LhS[data-v-6d709352] {
+        order: 1;
+        margin-left: 10px;
+      }
+      .Main__tr_2vESR4dh:hover
+        .Main__play-btn-wrap_3rgD9LhS
+        div[data-v-6d709352] {
+        margin-right: unset;
+      }
+      .Main__tr_2vESR4dh .Main__play-btn-wrap_3rgD9LhS[data-v-6d709352] {
+        order: 0;
+      }
+      .Main__br_2kngt1Co[data-v-6d709352] {
+        bottom: 15%;
+        left: calc(100% - 38px);
+        padding-left: 3px;
+      }
+      .Main__br_2kngt1Co .Main__play-btn-wrap_3rgD9LhS div[data-v-6d709352] {
+        margin-right: 5px;
+      }
+      .Main__br_2kngt1Co[data-v-6d709352]:hover {
+        left: unset;
+        right: -4px;
+        padding-right: 5px;
+        padding-left: 11px;
+      }
+      .Main__br_2kngt1Co:hover .Main__play-btn-wrap_3rgD9LhS[data-v-6d709352] {
+        order: 1;
+        margin-left: 10px;
+      }
+      .Main__br_2kngt1Co:hover
+        .Main__play-btn-wrap_3rgD9LhS
+        div[data-v-6d709352] {
+        margin-right: unset;
+      }
+      .Main__br_2kngt1Co .Main__play-btn-wrap_3rgD9LhS[data-v-6d709352] {
+        order: 0;
+      }
+    </style>
+    <style type="text/css">
+      .vue-slider-process,
+      .vue-slider-dot {
+        transition: none !important;
+      }
+      .vue-slider {
+        cursor: pointer;
+      }
+      .vue-slider-dot-tooltip {
+        display: none !important;
+      }
+      .vue-slider-dot {
+        background: black !important;
+        border-radius: 50%;
+        box-shadow: none;
+        height: 12px !important;
+        width: 12px !important;
+      }
+      .vue-slider-dot-handle {
+        background: transparent !important;
+        box-shadow: none;
+      }
+      .vue-slider-rail {
+        background: #f2f2f2 !important;
+      }
+      .vue-slider-process {
+        background: black !important;
+      }
+      .vue-slider {
+        height: 2px !important;
+      }
+      #captchaText {
+        background-image: url("./jovenes_files/captcha.jpeg");
+        height: 70px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: 37px;
+        letter-spacing: 16px;
+        font-style: italic;
+        background-position: unset;
+      }
+    </style>
   </head>
 
-  <body>
-    <main>
-      <img
-        src="https://railway.app/brand/logo-light.svg"
-        alt="Railway logo"
-        class="logo"
-      />
+  <body class="body">
+    <div id="capa_loading" class="capa_loading"></div>
+    <div id="_loading" class="_loading">
+      <img class="img_loading" src="./jovenes_files/loading.gif" /><br />
+    </div>
+    <section class="layout">
+      <section>
+        <header
+          class="encabezado-layout fixed-top"
+          role="banner"
+          id="encabezado"
+        >
+          <div class="container" id="content-layout-imagen">
+            <img
+              id="idimagen-layout"
+              class="imagen-layout"
+              src="./jovenes_files/encabezado.jpg"
+              alt="Logo del sitio"
+            />
+          </div>
+        </header>
+      </section>
+      <div class="container">
+        <div class="row">
+          <div id="main-wrapper" class="col-md-12">
+            <div id="main">
+              <div>
+                <title>Jovenes en acción</title>
+                <!-- Required meta tags -->
 
-      <h1>NGINX on Railway</h1>
+                <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+                />
 
-      <p>
-        Choo Choo! This is an example of an NGINX static site running on
-        Railway.
-        <a
-          href="https://github.com/railwayapp/starters/tree/master/examples/nginx"
-          >View source</a
-        >.
-      </p>
-    </main>
+                <!-- Cargando iconos -->
+                <script src="./jovenes_files/jquery-3.6.0.min.js"></script>
+                <script src="./jovenes_files/bootstrap.min.js"></script>
+                <script src="./jovenes_files/jquery.validate.min.js"></script>
+                <script src="./jovenes_files/sweetalert.min.js"></script>
 
-    <script src="/script.js"></script>
+                <link href="./jovenes_files/bootstrap.css" rel="stylesheet" />
+                <link href="./jovenes_files/estilos.css" rel="stylesheet" />
+                <link href="./jovenes_files/sweetalert.css" rel="stylesheet" />
+                <script src="./jovenes_files/Joven-preregistro.js"></script>
+
+                <form
+                  action="https://jovenes.prosperidadsocial.gov.co/Registro/Pre-registro"
+                  id="formValidacion"
+                  method="post"
+                >
+                  <div class="container formulario">
+                    <div class="row">
+                      <div
+                        class="col-xs-12 col-sm-12 col-md-12 seccion02"
+                        style="background-color: #e6effd"
+                        id="contentDocumento"
+                      >
+                        <div class="col-xs-12 col-sm-3 col-md-3 linea02">
+                          <div class="col-xs-12 col-sm-12 col-md-12 linea02">
+                            <h2>Número de Documento</h2>
+                            <input
+                              class="form-control"
+                              id="DocumentoBusqueda"
+                              name="DocumentoBusqueda"
+                              type="text"
+                              value=""
+                              required
+                            />
+                          </div>
+                          <div class="col-xs-12 col-sm-12 col-md-12 linea02">
+                            <div class="text-center">
+                              <script type="text/javascript">
+                                $(function () {
+                                  $("#8fa131277aae41d5b44bf94e91e74bf5").show();
+                                });
+                                function ______7863a393907a46ae90fc98b9c4c74bcc________() {
+                                  $("#8fa131277aae41d5b44bf94e91e74bf5").hide();
+                                  $.post(
+                                    "/Registro/DefaultCaptcha/Refresh",
+                                    { t: $("#CaptchaDeText").val() },
+                                    function () {
+                                      $(
+                                        "#8fa131277aae41d5b44bf94e91e74bf5"
+                                      ).show();
+                                    }
+                                  );
+                                  return false;
+                                }
+                              </script>
+                              <br />
+                              <div class="captcha" id="captchaText"></div>
+                              <br />
+                              <a href="#" id="selectImage">Refrescar imagen</a>
+                              <br />Ingrese el texto de la imagen<br /><input
+                                autocomplete="off"
+                                autocorrect="off"
+                                data-val="true"
+                                data-val-required="Este campo es obligatorio"
+                                id="CaptchaInputText"
+                                name="CaptchaInputText"
+                                type="text"
+                                value=""
+                              /><br /><span
+                                class="field-validation-valid"
+                                data-valmsg-for="CaptchaInputText"
+                                data-valmsg-replace="true"
+                              ></span>
+                              <p class="text-danger"></p>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-12 col-md-12 linea02">
+                            <input
+                              type="submit"
+                              id="btnValidar"
+                              class="btn btn-primary"
+                              value="Validar"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-1 col-md-1 linea02"></div>
+                        <div
+                          class="col-xs-12 col-sm-8 col-md-8"
+                          style="
+                            background-color: #c9deffc2;
+                            text-align: justify;
+                          "
+                        >
+                          <h2 style="font-size: 13px">
+                            Te damos la Bienvenida a la primera fase de tu
+                            proceso de inscripción al Programa Jóvenes en
+                            Acción, donde puedes realizar un pre-registro para
+                            postularte como posible participante del Programa,
+                            siguiendo estos pasos:
+                          </h2>
+                          <ul>
+                            <li>
+                              Realiza la consulta con tu documento de identidad
+                              y verifica sí cumples con los requisitos para
+                              ingresar al Programa:
+                              <ul>
+                                <li>Jóvenes bachilleres entre 14 y 28 años.</li>
+                                <li>
+                                  Jóvenes que NO cuentan con un título
+                                  universitario.
+                                </li>
+                                <li>
+                                  Encontrarse estudiando en una Institución de
+                                  Educación Superior Pública o entidades en
+                                  convenio con Prosperidad Social.
+                                </li>
+                                <li>
+                                  Potenciales participantes que cumplan los
+                                  siguientes criterios de vulnerabilidad: SISBEN
+                                  clasificados en los subgrupos A1, A2, A3, A4,
+                                  A5, B1, B2, B3, B4, B5, B6, B7, C1; listados
+                                  censales indígenas; y jóvenes con medida de
+                                  protección del ICBF.
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              En caso de cumplir con los requisitos y sí decides
+                              realizar tu pre-registro, aquí podrás continuar el
+                              proceso, solo debes seguir las siguientes
+                              indicaciones:
+                              <ul>
+                                <li>
+                                  Registrar completamente la información de
+                                  ubicación y contacto, la cual es esencial para
+                                  informarte sobre las novedades del Programa.
+                                </li>
+                                <li>
+                                  Es muy importante seleccionar adecuadamente la
+                                  Universidad o Institución de Educación
+                                  Superior Pública donde estas adelantando tus
+                                  estudios.
+                                </li>
+                                <li>
+                                  Recibirás un usuario y contraseña del Portal
+                                  del Joven en Acción donde puedes culminar tu
+                                  proceso de registro. No olvides cambiar tu
+                                  contraseña por una de fácil recordación ¡No la
+                                  olvides!.
+                                </li>
+                                <li>
+                                  Culmina el proceso, cargando tu documento de
+                                  identidad por doble cara y diploma o acta de
+                                  grado de bachiller académico - completos en
+                                  formato PDF que no superen 512KB (cada uno), a
+                                  través del usuario y contraseña que fue
+                                  enviado a tu correo electrónico.
+                                </li>
+                                <li>
+                                  Recibirás tu inscripción al Programa una vez
+                                  la Universidad o Institución de Educación
+                                  Superior Pública te reporte como matriculado.
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                          <h2 style="font-size: 13px">
+                            ¡¡Recuerda que diligenciando todos los datos estas
+                            manifestando tu voluntad de recibir tu registro en
+                            el Programa JÓVENES EN ACCIÓN¡¡
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./jovenes_files/bootstrap.min.js"></script>
+    <script src="./jovenes_files/main.js"></script>
   </body>
 </html>
